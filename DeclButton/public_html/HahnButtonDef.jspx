@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <af:componentDef var="attrs" componentVar="comp" definition="private">
+        <af:panelGroupLayout id="dc_pgl1">
+            <af:button text="#{attrs.btnName}" id="dc_b1" actionListener="#{comp.handleMethod1}"/>
+        </af:panelGroupLayout>
+        <af:xmlContent>
+            <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+                <description/>
+                <display-name>HahnButtonDef</display-name>
+                <attribute>
+                    <attribute-name>btnName</attribute-name>
+                    <attribute-class>java.lang.String</attribute-class>
+                    <default-value>Click ME</default-value>
+                </attribute>
+                <component-extension>
+                    <component-tag-namespace>de.hahn.blog.declarativecomponents.button</component-tag-namespace>
+                    <component-taglib-uri>/www.hahn.de/button</component-taglib-uri>
+                    <method-attribute>
+                        <attribute-name>method1</attribute-name>
+                        <method-signature>void method(javax.faces.event.ActionEvent)</method-signature>
+                        <required>true</required>
+                    </method-attribute>
+                </component-extension>
+            </component>
+        </af:xmlContent>
+    </af:componentDef>
+</jsp:root>

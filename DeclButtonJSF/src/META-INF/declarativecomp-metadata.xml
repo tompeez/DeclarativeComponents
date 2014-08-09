@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<declarativeCompDefs xmlns="http://xmlns.oracle.com/adf/faces/rich/declarativecomp">
+  <declarativecomp-jsp-ui-def>/HahnButtonJSFDef.jsf</declarativecomp-jsp-ui-def>
+  <declarativecomp-taglib>
+    <taglib-name>hahnButtonJSF</taglib-name>
+    <taglib-uri>/www.hahn.de/buttonJSF</taglib-uri>
+    <taglib-prefix>hahnbtnJSF</taglib-prefix>
+  </declarativecomp-taglib>
+</declarativeCompDefs>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:componentDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" componentVar="comp" definition="private"
+                 xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+    <af:panelGroupLayout id="dc_pgl1">
+        <af:button text="#{attrs.btnName}" id="dc_b1" actionListener="#{comp.handleMethod1}"/>
+    </af:panelGroupLayout>
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>HahnButtonJSFDef</afc:display-name>
+            <afc:attribute>
+                <afc:attribute-name>btnName</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+                <afc:default-value>Click ME</afc:default-value>
+            </afc:attribute>
+            <afc:component-extension>
+                <afc:component-tag-namespace>de.hahn.blog.declarativecomponents.buttonjsf</afc:component-tag-namespace>
+                <afc:component-taglib-uri>/www.hahn.de/buttonJSF</afc:component-taglib-uri>
+                <afc:method-attribute>
+                    <afc:attribute-name>method1</afc:attribute-name>
+                    <afc:method-signature>void method(javax.faces.event.ActionEvent)</afc:method-signature>
+                    <afc:required>true</afc:required>
+                </afc:method-attribute>
+            </afc:component-extension>
+        </afc:component>
+    </af:xmlContent>
+</af:componentDef>
